@@ -11,11 +11,11 @@ from IPython.display import display
 px.defaults.template = 'plotly_dark'
 px.defaults.color_continuous_scale = 'reds'
 
-img = Image.open("./grocery.jpg")
+img = Image.open("Dashboard/grocery.jpg")
 st.sidebar.image(img)
 
 # Membuka file
-csv_path = "./all_data.csv"
+csv_path = "Dashboard/all_data.csv"
 data = pd.read_csv(csv_path)
 
 datetime_columns = ["order_delivered_customer_date", "order_delivered_carrier_date"]
